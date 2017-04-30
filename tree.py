@@ -44,5 +44,3 @@ def main():
         printTreeIn(Tree)
 
     print("--- End ---")
-
-main()

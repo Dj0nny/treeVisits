@@ -29,18 +29,17 @@ def printTreeIn(Tree):
 
 Tree = Tree('+', Tree(1), Tree('*', Tree(2), Tree(3)))
 
-def main():
-    choice = input('Insert the number of the visit: 1 for Pre-order, 2 for Post-order, 3 for In-order: ')
-    choice = int(choice)
-    print()
-    if choice == 1:
-        print("Pre-order visit of the tree: ")
-        printTreePre(Tree)
-    elif choice == 2:
-        print("Post-order visit of the tree: ")
-        printTreePost(Tree)
-    else:
-        print("In-order visit of the tree: ")
-        printTreeIn(Tree)
+choice = input('Insert the number of the visit: 1 for Pre-order, 2 for Post-order, 3 for In-order: ')
+choice = int(choice)
+print()
+if choice == 1:
+    print("Pre-order visit of the tree: ")
+    printTreePre(Tree)
+elif choice == 2:
+    print("Post-order visit of the tree: ")
+    printTreePost(Tree)
+else:
+    print("In-order visit of the tree: ")
+    printTreeIn(Tree)
 
-    print("--- End ---")
+print("--- End ---")
